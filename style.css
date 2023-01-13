@@ -1,0 +1,155 @@
+/* Common Styles */
+
+/* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Bar / Title Bar Styles */
+.nav-bar,
+.menu-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    gap: 34px;
+    list-style: none;
+}
+
+/* Banner Styles */
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.banner-text {
+    width: 45%;
+}
+
+.banner-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 70px;
+    color: #3A3A3A;
+}
+
+.banner-sub-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3A3A3A;
+}
+
+.banner-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: 196px;
+    height: 44px;
+
+    color: #FFFFFF;
+    background: #E02C6D;
+
+    border: none;
+    border-radius: 41px;
+}
+
+.banner-pic {
+    /* width: 50%; */
+    background-image: url(images/circle-design.svg);
+    width: 475px;
+    height: 475px;
+}
+
+.banner-pic>img {
+    width: 440px;
+    height: 440px;
+}
+
+
+/*----------------------------------------------
+    Responsive
+ ----------------------------------------------*/
+
+/*----------------------------------------------
+    Mobile Device
+ ----------------------------------------------*/
+
+@media only screen and (max-width: 688px) {
+    .menu {
+        display: none;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .banner-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .banner-title {
+        font-size: 28px;
+        line-height: 42px;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .banner-sub-title {
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .banner-pic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/*----------------------------------------------
+    Medium Device
+ ----------------------------------------------*/
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .mobile-icon {
+        display: none;
+    }
+}
+
+
+/*----------------------------------------------
+    Large Device
+ ----------------------------------------------*/
+
+@media only screen and (min-width: 993px) {
+
+    .mobile-icon {
+        display: none;
+    }
+
+}
