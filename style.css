@@ -81,6 +81,24 @@ body {
     height: 440px;
 }
 
+/* Sponsor Logo Style */
+hr {
+    width: 1110px;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+}
+.sponsors{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    /* align-items: flex-end; */
+}
+.sponsorlogo1, .sponsorlogo2 {
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    column-gap: 30px;
+    align-items: center;
+}
 
 /*----------------------------------------------
     Responsive
@@ -128,6 +146,20 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    /* Sponsor Logos */
+    hr {
+        display: none;
+    }
+
+    .sponsors {
+        flex-direction: column;
+    }
+    .sponsorlogo2{
+        display: block;
+        gap: 10px;
+        align-self: center;
     }
 
 }
